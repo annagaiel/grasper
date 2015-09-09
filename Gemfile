@@ -35,7 +35,7 @@ gem 'devise'
 
 gem 'carrierwave'
 
-gem "figaro"
+gem "figaro", ">=1.0.0"
 
 gem "fog", "~> 1.3.1"
 
