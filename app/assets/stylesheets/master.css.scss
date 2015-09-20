@@ -90,6 +90,7 @@ body {
   background-color: rgba(36,32,33,0.9);
   font-family: "Helvetica Neue",Helvetica;
   margin-top:30px;
+  font-weight: 100;
 
   a {
     color:white;
@@ -164,4 +165,29 @@ ul {
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 20px;
   margin: 20px;
+}
+
+.social-button {
+  width: 32px;  
+  margin: 4px;
+  
+  a:hover {
+    text-decoration:none; 
+  }
+}
+
+$footer-height-mobile: 200px;
+@media (max-width: 750px) {
+  #footer {
+    height:$footer-height-mobile;
+  }
+
+  #wrap {
+    margin: 0 auto -$footer-height-mobile;
+    padding: 0 0 $footer-height-mobile;
+  }
+
+  #footer .social {
+    margin-top: 10px;
+  }
 }
