@@ -5,4 +5,10 @@ class CoursesControllerTest < ActionController::TestCase
     get :index
     assert_response :success
   end
+
+  test "course show page" do
+    course = FactoryGirl.create(:course)
+    get :show, :id => course.id
+    assert_response :success
+  end
 end
