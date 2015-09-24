@@ -5,4 +5,10 @@ class StaticPagesControllerTest < ActionController::TestCase
     get :index
     assert_response :success
   end
+
+	test "should get privacy" do
+    get :privacy
+    assert_response :success
+  end
+  
 end
