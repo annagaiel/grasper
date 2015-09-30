@@ -15,13 +15,13 @@
 	    
 	    <br /><br />
 	    
-	    <%= link_to 'Administer', instructor_course_path(@course), :class => 'btn btn-danger' 'btn-large' %>
+	    <%= link_to 'Administer', instructor_course_path(@course), :class => 'btn btn-danger btn-md' %>
 	  <% end %>
 	    
 	    <br /><br />
 
 	  <% if current_user && current_user.enrolled_in?(@course) %>
-	    <h3 class="label label-info">You are Enrolled!</h3>
+	    <h2 class="label label-info">You are Enrolled!</h2>
 	  <% else %>
 	  	<% if @course.free? %>
           <%= link_to 'Enroll', course_enrollments_path(@course), :class => 'btn btn-primary', :method => :post %>

@@ -5,7 +5,7 @@
 <br />
 
 <div class="card-box col-xs-10 col-xs-offset-1">
-	<h1>Learn something today<h1>
+	<h1>Learn Something Today<h1>
 	<hr />
 
 	<% @courses.each do |course| %>
@@ -21,6 +21,7 @@
 		<div class="col-sm-8 col-xs-12">
 		  <%= course.description %>
 		</div>
+		
 		<div>
 		  <%= link_to 'More Details...', course_path(course), :class => 'btn btn-primary btn-large' %>	
 		</div>

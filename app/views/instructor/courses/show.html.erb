@@ -37,7 +37,7 @@
       <%= image_tag current_course.image, :class => 'img-responsive' %>
     <% end %>
   <br />
-  <%= link_to 'Preview As Student...', course_path(current_course), :class => 'btn btn-warning pull right' %>
+  <%= link_to 'Preview As Student...', course_path(current_course), :class => 'btn btn-success pull right' %>
   <br class="clr"/>
 
   <div class="text-center">
@@ -49,7 +49,7 @@
 
   <ul class="sections">
   	<% current_course.sections.rank(:row_order).each do |section| %>
-  	<li data-sec-update-url="<%= instructor_section_path(section) %>" class="section-li">
+  	<li data-sec-update-url="<%= instructor_section_path(section) %>" class="section-li dragHandle">
   		<div class="header">
         <span class="glyphicon glyphicon-list"></span>
         <%= section.title %>
@@ -62,7 +62,7 @@
       <br class="clr" />
       <ul class="lessons">
         <% section.lessons.rank(:row_order).each do |lesson| %>
-        <li tabindex="0" data-update-url="<%= instructor_lesson_path(lesson) %>">
+        <li data-update-url="<%= instructor_lesson_path(lesson) %>" class="dragHandle">
           <div class="col-xs-1">
             <br />
             <span class="glyphicon glyphicon-list"></span>
