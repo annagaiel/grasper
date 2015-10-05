@@ -1,0 +1,38 @@
+<div id="footer">
+  <div class="container">
+    <div class="col-xs-12 col-sm-3">
+      <h2>Teachers</h2>
+      <ul>
+        <li><%= link_to 'Teach a Course', new_instructor_course_path %></li>
+        <li><%= link_to 'My Dashboard', dashboard_path %></li>
+      </ul>      
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <h2>About</h2>
+      <ul>
+        <li><%= link_to 'Meet the Team', '#' %></li>
+        <li><%= link_to 'Careers', '#' %></li>
+        <li><%= link_to 'Privacy Policy', privacy_path %></li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <h2>Contact</h2>
+      <ul>
+        <li><%= link_to 'annagaiel@gmail.com', 'mailto:annagaiel@gmail.com' %></li>
+        <li>One Anndale Square</li>
+        <li>San Francisco, CA 94105</li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-3 social">
+      <h2>Social</h2>
+      <br />
+      <br />
+      <ul>
+        <li><%= link_to 'https://github.com/annagaiel/' do %>
+        <%= image_tag 'github.png', :class => 'social-button' %><% end %></li>
+        <li><%= image_tag 'twitter.png', :class => 'social-button' %></li>
+        <li><%= image_tag 'facebook.png', :class => 'social-button' %></li>
+      </ul>      
+    </div>
+  </div>
+</div>

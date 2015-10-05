@@ -1,3 +1,17 @@
 // Place all the styles related to the courses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.great {
+	background: #00ac98;
+	margin: 0 0;
+	padding: 7px 15px;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 5px;
+	display: inline-block;
+	  -moz-box-shadow:    2px 4px 5px 0 #ccc;
+		-webkit-box-shadow: 2px 4px 5px 0 #ccc;
+		box-shadow:         2px 4px 5px 0 #ccc;
+}
+

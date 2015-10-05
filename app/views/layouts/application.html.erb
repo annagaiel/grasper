@@ -60,45 +60,7 @@
   
 <br class="clr" />
 
-<div id="footer">
-  <div class="container">
-    <div class="col-xs-12 col-sm-3">
-      <h2>Teachers</h2>
-      <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
-      <br />
-      <%= link_to 'My Dashboard', dashboard_path %>
-    </div>
-    <div class="col-xs-12 col-sm-3">
-      <h2>About</h2>
-      <br />
-      <%= link_to 'Meet the Team', '#' %>
-      <br />
-      <%= link_to 'Careers', '#' %>
-      <br />
-      <%= link_to 'Privacy Policy', privacy_path %>
-    </div>
-    <div class="col-xs-12 col-sm-3">
-      <h2>Contact</h2>
-      <br />
-      <%= link_to 'annagaiel@gmail.com', 'mailto:annagaiel@gmail.com' %>
-      <br />
-      One Anndale Square
-      <br />
-      San Francisco, CA 94105
-    </div>
-    <div class="col-xs-12 col-sm-3 social">
-      <h2>Social</h2>
-      <br />
-      <br />
-      <%= link_to 'https://github.com/annagaiel/' do %>
-        <%= image_tag 'github.png', :class => 'social-button' %>
-      <% end %>
-      <%= image_tag 'twitter.png', :class => 'social-button' %>
-      <%= image_tag 'facebook.png', :class => 'social-button' %>
-    </div>
-  </div>
-</div>
+<%= render "layouts/footer" %>
 
 </body>
 </html>

@@ -1,8 +1,9 @@
 $footer-height: 150px;
+$font-text: "Lato", Helvetica;
 
 .navbar {
   border-radius:0;
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: $font-text;
   font-weight: 200;
   box-shadow: 0px 1px 3px #2a2a2a;
   background:url('black_cross.png');
@@ -18,16 +19,7 @@ $footer-height: 150px;
   color: #8AB2FF;
 }
 
-.hero {
-  background: url('space.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height:370px;
-  box-shadow: 0px 3px 8px #2a2a2a;
-  color: white;
-}
+
 
 h1, h2, h3, h4, h5, h6, .navbar {
   margin:0;
@@ -36,24 +28,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
-}
-
-.frosty { 
-  font-family: "Lato", Helvetica;
-  text-shadow: rgba(0,0,0,0.95) 1px 1px;
-
-  h1 {
-    font-weight: 700;
-    font-size: 32px;
-    color: white;
-
-  }
-  h2 {
-    font-weight: 200;
-    font-size: 24px;
-    color: white;
-
-  }
 } 
 
 .btn {
@@ -91,14 +65,15 @@ body {
 }
 
 .card-box {
-  -webkit-box-shadow: -2px 3px 5px 0px rgba(204,204,204,1);
-  -moz-box-shadow: -2px 3px 5px 0px rgba(204,204,204,1);
-  box-shadow: -2px 3px 5px 0px rgba(204,204,204,1);
+  -webkit-box-shadow: -2px 2px 5px 1px rgba(204,204,204,1);
+  -moz-box-shadow: -2px 2px 5px 1px rgba(204,204,204,1);
+  box-shadow: -2px 2px 5px 1px rgba(204,204,204,1);
   background: #fff;
-  border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
   padding:10px;
+  color: #1D0251;
 
   h1, h2 {
     margin:10px;
@@ -126,7 +101,7 @@ body {
   height:$footer-height;
   color: white;
   background-color: rgba(180,43,63,0.9);
-  font-family: "Lato",Helvetica;
+  font-family: $font-text;
   margin-top:30px;
   font-weight: 100;
   padding:30px 0px;
@@ -142,7 +117,6 @@ body {
     font-size: 18px;
   }
 }
-
 
 .field_with_errors {
   color: #ff3333;
@@ -166,13 +140,13 @@ body {
 
 
 .lesson {
-  background-color: black;
+  background:url('black_cross.png');
   margin-top: 10px;
   height: 130px;
 
   a {
     color: white;
-    font-family: "Helvetica Neue", Helvetica;
+    font-family: $font-text;
     font-weight: 100;
     font-size: 15px;
   }
@@ -186,7 +160,7 @@ body {
     background: black;
     color: white;
     margin: 10px;
-    font-family: "Helvetica Neue", Helvetica;
+    font-family: $font-text;
     font-weight: 100;
     padding: 8px;
   }
@@ -196,7 +170,7 @@ body {
   font-weight: 100;
   font-size: 15px;
 }
-.lesson li p{
+.lesson li h3{
   margin: 0;
 }
 
@@ -219,8 +193,11 @@ ul {
 }
 
 .section-li {
-  border: 1px solid;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  -webkit-box-shadow: -2px 2px 5px 1px rgba(218,21,53,1);
+  -moz-box-shadow: -2px 2px 5px 1px rgba(218,21,53,1);
+  box-shadow: -2px 2px 5px 1px rgba(218,21,53,1);
+  background-color: #E52C4E;
+  color: #fff;
   padding: 20px;
   margin: 20px;
 }
@@ -234,7 +211,20 @@ ul {
   }
 }
 
-$footer-height-mobile: 350px;
+h3 .feature-course {
+  color: #ffffff;
+}
+
+#footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.social ul li {
+  display:inline;
+}
+
+$footer-height-mobile: 400px;
 @media (max-width: 750px) {
   #footer {
     height:$footer-height-mobile;

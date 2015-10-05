@@ -1,3 +1,37 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.hero {
+  background: url('space.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:370px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+  color: white;
+}
+
+
+.frosty { 
+  font-family: "Lato", Helvetica;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+
+  }
+  h2 {
+    font-weight: 200;
+    font-size: 24px;
+    color: white;
+
+  }
+}
+
+.feature-course {
+  color: #0A204C; 
+}

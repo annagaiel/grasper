@@ -18,12 +18,14 @@
 		<% end %>
 	 	
 	 	<br />
-		<div class="col-sm-8 col-xs-12">
+		<div class="col-xs-12 col-sm-8">
 		  <%= course.description %>
+		  <br /><br />
 		</div>
-		
-		<div>
-		  <%= link_to 'More Details...', course_path(course), :class => 'btn btn-primary btn-large' %>	
+		<div class="col-xs-12 col-sm-4 text-center">
+		  <%= link_to course_path(course), :class => 'btn btn-primary btn-large' do %>
+		  	More Details <span class="glyphicon glyphicon-chevron-right"></span> 
+		  <% end %>	
 		</div>
 		<br class="clr" />
 	<% end %>
